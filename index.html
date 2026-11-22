@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presence Uplift | Social Media Growth Agency</title>
+<meta name="description" content="Presence Uplift is a social media agency helping businesses in the US, UK, Canada, Australia and UAE grow on Instagram, TikTok, Facebook and LinkedIn with content that brings real clients.">
+<meta property="og:title" content="Presence Uplift | Social Media Growth Agency">
+<meta property="og:description" content="Content, strategy and growth for Instagram, TikTok, Facebook & LinkedIn. Book a free audit.">
+<meta property="og:url" content="https://presenceuplift.com">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://presenceuplift.com/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='1' x2='1' y2='0'><stop offset='0' stop-color='%23ff4d6d'/><stop offset='1' stop-color='%23ffb547'/></linearGradient></defs><rect width='64' height='64' rx='16' fill='%230b0d1a'/><path d='M18 42 L32 22 L46 42' fill='none' stroke='url(%23g)' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0d1a; --bg2:#121527; --card:#171b31; --line:#262b48;
+  --text:#eef0fb; --muted:#9aa1c4;
+  --a:#ff4d6d; --b:#ffb547; --c:#7c5cff;
+  --grad:linear-gradient(120deg,var(--a),var(--b));
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.logo{font-family:"Space Grotesk",sans-serif;line-height:1.15;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .2s,box-shadow .2s}
+.btn-primary{background:var(--grad);color:#1a0b10;box-shadow:0 10px 30px -10px rgba(255,77,109,.6)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 40px -10px rgba(255,77,109,.8)}
+.btn-ghost{border:1px solid var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--muted)}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--b);margin-bottom:14px}
+section{padding:100px 0}
+.section-head{max-width:680px;margin-bottom:56px}
+.section-head h2{font-size:clamp(30px,4vw,44px);margin-bottom:16px}
+.section-head p{color:var(--muted);font-size:18px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(11,13,26,.8);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+nav.scrolled{border-bottom-color:var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:700}
+.logo-mark{width:34px;height:34px;border-radius:10px;background:var(--bg2);border:1px solid var(--line);display:grid;place-items:center}
+.nav-links{display:flex;gap:32px;font-size:15px;color:var(--muted)}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{padding:10px 20px;font-size:14px}
+.burger{display:none;background:none;border:0;color:var(--text);font-size:26px;cursor:pointer}
+
+/* hero */
+.hero{position:relative;padding:110px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;width:700px;height:700px;right:-200px;top:-250px;background:radial-gradient(circle,rgba(124,92,255,.35),transparent 65%);pointer-events:none}
+.hero::after{content:"";position:absolute;width:600px;height:600px;left:-250px;bottom:-300px;background:radial-gradient(circle,rgba(255,77,109,.22),transparent 65%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(40px,6vw,68px);margin-bottom:24px}
+.hero p.lead{font-size:20px;color:var(--muted);max-width:560px;margin-bottom:36px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
+.platforms{display:flex;gap:10px;flex-wrap:wrap}
+.chip{padding:7px 14px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--muted);background:var(--bg2)}
+
+/* phone mock */
+.phone{position:relative;margin:0 auto;width:290px;aspect-ratio:9/18.5;border-radius:42px;background:#05060d;border:1px solid var(--line);padding:12px;box-shadow:0 40px 80px -30px rgba(0,0,0,.8)}
+.screen{height:100%;border-radius:32px;background:var(--bg2);overflow:hidden;padding:18px 16px}
+.ig-top{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.avatar{width:54px;height:54px;border-radius:50%;padding:3px;background:var(--grad)}
+.avatar div{width:100%;height:100%;border-radius:50%;background:var(--bg2);display:grid;place-items:center;font-weight:700;font-family:"Space Grotesk";font-size:15px}
+.ig-stats{display:flex;gap:14px;font-size:11px;color:var(--muted)}
+.ig-stats b{display:block;color:var(--text);font-size:14px}
+.ig-bio{font-size:11px;color:var(--muted);margin-bottom:14px}
+.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.ig-grid span{aspect-ratio:1;border-radius:6px}
+.ig-grid span:nth-child(1){background:linear-gradient(135deg,#ff4d6d,#7c5cff)}
+.ig-grid span:nth-child(2){background:linear-gradient(135deg,#ffb547,#ff4d6d)}
+.ig-grid span:nth-child(3){background:linear-gradient(135deg,#2dd4bf,#7c5cff)}
+.ig-grid span:nth-child(4){background:linear-gradient(135deg,#7c5cff,#2dd4bf)}
+.ig-grid span:nth-child(5){background:linear-gradient(135deg,#ff4d6d,#ffb547)}
+.ig-grid span:nth-child(6){background:linear-gradient(135deg,#ffb547,#2dd4bf)}
+.ig-grid span:nth-child(7){background:linear-gradient(135deg,#2dd4bf,#ff4d6d)}
+.ig-grid span:nth-child(8){background:linear-gradient(135deg,#7c5cff,#ffb547)}
+.ig-grid span:nth-child(9){background:linear-gradient(135deg,#ff4d6d,#2dd4bf)}
+.float{position:absolute;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:13px;box-shadow:0 20px 40px -15px rgba(0,0,0,.7);display:flex;align-items:center;gap:10px;animation:bob 5s ease-in-out infinite}
+.float i{font-style:normal;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--grad);color:#1a0b10;font-weight:700}
+.f1{left:-60px;top:22%}
+.f2{right:-50px;bottom:20%;animation-delay:-2.5s}
+@keyframes bob{50%{transform:translateY(-10px)}}
+
+/* problems */
+.problems{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;transition:border-color .25s,transform .25s}
+.card:hover{border-color:#3a4170;transform:translateY(-4px)}
+.icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;margin-bottom:20px;background:rgba(255,77,109,.12);color:var(--a);font-size:22px}
+.card h3{font-size:20px;margin-bottom:10px}
+.card p{color:var(--muted);font-size:15.5px}
+
+/* services */
+.grid-services{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc .icon{background:rgba(124,92,255,.14);color:#a993ff}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{position:relative;padding:30px 26px;border-radius:var(--radius);border:1px solid var(--line);background:linear-gradient(180deg,var(--card),var(--bg))}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:"Space Grotesk";font-size:44px;font-weight:700;display:block;margin-bottom:12px}
+.step:nth-child(odd)::before{color:var(--a)}
+.step:nth-child(even)::before{color:var(--b)}
+.step h3{font-size:19px;margin-bottom:8px}
+.step p{color:var(--muted);font-size:15px}
+
+/* pricing */
+.pricing{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:36px 30px;display:flex;flex-direction:column}
+.plan.featured{border:1px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,var(--grad) border-box;position:relative;transform:scale(1.03)}
+.badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--grad);color:#1a0b10;font-size:12px;font-weight:700;padding:5px 14px;border-radius:999px;letter-spacing:.05em;text-transform:uppercase}
+.plan h3{font-size:22px;margin-bottom:6px}
+.plan .for{color:var(--muted);font-size:14.5px;margin-bottom:22px}
+.price{font-family:"Space Grotesk";font-size:44px;font-weight:700;margin-bottom:4px}
+.price small{font-size:16px;color:var(--muted);font-weight:500}
+.from{font-size:13px;color:var(--muted);margin-bottom:24px}
+.plan ul{list-style:none;margin-bottom:30px;flex:1}
+.plan li{padding:9px 0 9px 30px;position:relative;font-size:15px;border-bottom:1px dashed var(--line)}
+.plan li:last-child{border:0}
+.plan li::before{content:"✓";position:absolute;left:0;top:9px;width:20px;height:20px;border-radius:50%;background:rgba(45,212,191,.15);color:#2dd4bf;font-size:12px;display:grid;place-items:center;font-weight:700}
+.plan .btn{justify-content:center}
+.note{text-align:center;color:var(--muted);margin-top:34px;font-size:15px}
+
+/* why */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.why-list{display:grid;gap:18px}
+.why-item{display:flex;gap:18px;padding:22px;border-radius:16px;border:1px solid var(--line);background:var(--card)}
+.why-item .icon{margin:0;flex-shrink:0;background:rgba(255,181,71,.13);color:var(--b)}
+.why-item h3{font-size:18px;margin-bottom:4px}
+.why-item p{color:var(--muted);font-size:15px}
+.founders{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.founder{text-align:center;padding:34px 20px;border-radius:var(--radius);border:1px solid var(--line);background:var(--card)}
+.founder .avatar{width:96px;height:96px;margin:0 auto 18px}
+.founder .avatar div{font-size:30px}
+.founder h3{font-size:20px}
+.founder span{color:var(--muted);font-size:14px}
+
+/* faq */
+.faq{max-width:820px}
+details{border:1px solid var(--line);border-radius:16px;background:var(--card);margin-bottom:14px;overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:22px 26px;font-weight:600;font-size:17px;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:24px;color:var(--b);line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 26px 22px;color:var(--muted)}
+
+/* cta */
+.cta-box{position:relative;overflow:hidden;border-radius:28px;padding:70px 50px;text-align:center;background:radial-gradient(circle at 20% 0%,rgba(124,92,255,.45),transparent 50%),radial-gradient(circle at 90% 100%,rgba(255,77,109,.4),transparent 50%),var(--card);border:1px solid var(--line)}
+.cta-box h2{font-size:clamp(30px,4.5vw,48px);margin-bottom:16px}
+.cta-box p{color:var(--muted);font-size:18px;max-width:600px;margin:0 auto 34px}
+.contact-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* footer */
+footer{padding:44px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.foot-in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot-links{display:flex;gap:24px}
+.foot-links a:hover{color:var(--text)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .hero-grid,.why-grid{grid-template-columns:1fr}
+  .phone-wrap{display:none}
+  .grid3,.grid-services,.plans{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .plan.featured{transform:none}
+  .nav-links{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line)}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:16px 24px;border-top:1px solid var(--line)}
+  .burger{display:block}
+  .nav-cta{display:none}
+  section{padding:72px 0}
+}
+@media (max-width:560px){
+  .steps,.founders{grid-template-columns:1fr}
+  .cta-box{padding:50px 24px}
+  .hero{padding:70px 0 60px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo">
+      <span class="logo-mark"><svg width="20" height="20" viewBox="0 0 64 64"><defs><linearGradient id="lg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#ff4d6d"/><stop offset="1" stop-color="#ffb547"/></linearGradient></defs><path d="M14 46 L32 18 L50 46" fill="none" stroke="url(#lg)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      Presence<span class="grad-text">Uplift</span>
+    </a>
+    <div class="nav-links" id="links">
+      <a href="#services">Services</a>
+      <a href="#process">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a href="#contact" class="btn btn-primary nav-cta">Free Audit</a>
+    <button class="burger" id="burger" aria-label="Open menu">☰</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Social Media Growth Agency</span>
+      <h1>Turn your social media into a <span class="grad-text">client magnet.</span></h1>
+      <p class="lead">We plan, create and manage scroll-stopping content for growing businesses in the US, UK, Canada, Australia and the UAE, so you get more followers, more trust and more clients without lifting a finger.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Get a Free Profile Audit →</a>
+        <a href="#pricing" class="btn btn-ghost">See Packages</a>
+      </div>
+      <div class="platforms">
+        <span class="chip">Instagram</span><span class="chip">TikTok</span><span class="chip">Facebook</span><span class="chip">LinkedIn</span><span class="chip">Meta &amp; TikTok Ads</span>
+      </div>
+    </div>
+    <div class="phone-wrap reveal">
+      <div class="phone">
+        <div class="float f1"><i>♥</i><div><b>More engagement</b><br><span style="color:var(--muted)">content people save &amp; share</span></div></div>
+        <div class="float f2"><i>↗</i><div><b>More enquiries</b><br><span style="color:var(--muted)">DMs that turn into clients</span></div></div>
+        <div class="screen">
+          <div class="ig-top">
+            <div class="avatar"><div>YB</div></div>
+            <div class="ig-stats"><div><b>248</b>posts</div><div><b>12.4K</b>followers</div><div><b>310</b>following</div></div>
+          </div>
+          <div class="ig-bio"><b style="color:var(--text)">Your Brand</b><br>Consistent. On-brand. Growing.<br>📍 Book a call ↓</div>
+          <div class="ig-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="problems">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Sound familiar?</span>
+      <h2>Great business. <span class="grad-text">Invisible online.</span></h2>
+      <p>Most businesses lose clients to competitors simply because those competitors look better on social media.</p>
+    </div>
+    <div class="grid3">
+      <div class="card reveal"><div class="icon">⏳</div><h3>No time to post</h3><p>You're busy running the business. Posting consistently keeps slipping down the to-do list, and your page looks inactive.</p></div>
+      <div class="card reveal"><div class="icon">📉</div><h3>Posts get no reach</h3><p>You post sometimes, but views and likes stay flat. Without a strategy, the algorithm doesn't show your content to new people.</p></div>
+      <div class="card reveal"><div class="icon">💬</div><h3>Followers don't become clients</h3><p>Even when people find you, nothing guides them to book, buy or message. Your page isn't built to convert.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>Everything your social media needs, <span class="grad-text">done for you.</span></h2>
+      <p>One team handling strategy, content, posting and growth, so you can focus on your business.</p>
+    </div>
+    <div class="grid-services">
+      <div class="card svc reveal"><div class="icon">🧭</div><h3>Strategy &amp; Profile Setup</h3><p>Audience research, competitor analysis, content pillars, and a profile makeover (bio, highlights, links) built to convert visitors.</p></div>
+      <div class="card svc reveal"><div class="icon">🎨</div><h3>Content Creation</h3><p>On-brand posts, carousels and stories designed to stop the scroll, with captions and hashtags written for your audience.</p></div>
+      <div class="card svc reveal"><div class="icon">🎬</div><h3>Reels &amp; Short Video</h3><p>Scripted and edited reels and TikToks, the format that gets you in front of new people fastest.</p></div>
+      <div class="card svc reveal"><div class="icon">📅</div><h3>Scheduling &amp; Management</h3><p>A monthly content calendar you approve in advance. We post at the best times on every platform.</p></div>
+      <div class="card svc reveal"><div class="icon">🤝</div><h3>Community Management</h3><p>We reply to comments and engage with your audience so your page feels alive and trusted.</p></div>
+      <div class="card svc reveal"><div class="icon">🚀</div><h3>Paid Ads &amp; Reporting</h3><p>Meta and TikTok ad campaigns to scale results, plus a clear monthly report showing what's working.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="process" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>From first call to <span class="grad-text">growing page</span> in 4 steps.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Free audit call</h3><p>We review your current profiles and show you exactly what's holding them back.</p></div>
+      <div class="step reveal"><h3>Custom strategy</h3><p>We build a plan around your goals, audience, and brand voice.</p></div>
+      <div class="step reveal"><h3>Create &amp; publish</h3><p>You approve the monthly calendar, and we design, write, and post everything.</p></div>
+      <div class="step reveal"><h3>Report &amp; grow</h3><p>Monthly reports with clear numbers. We double down on what works.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center">
+      <span class="eyebrow">Packages</span>
+      <h2>Simple monthly plans. <span class="grad-text">No long contracts.</span></h2>
+      <p>Pick a starting point. Every plan can be tailored to your business.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <h3>Starter</h3>
+        <p class="for">For businesses that need a consistent presence</p>
+        <div class="price">$499<small>/month</small></div>
+        <p class="from">starting price</p>
+        <ul>
+          <li>2 platforms</li>
+          <li>12 designed posts / month</li>
+          <li>Captions &amp; hashtag research</li>
+          <li>Profile optimization</li>
+          <li>Scheduling &amp; posting</li>
+          <li>Monthly performance report</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost">Get Started</a>
+      </div>
+      <div class="plan featured reveal">
+        <span class="badge">Most popular</span>
+        <h3>Growth</h3>
+        <p class="for">For businesses ready to grow fast</p>
+        <div class="price">$999<small>/month</small></div>
+        <p class="from">starting price</p>
+        <ul>
+          <li>3 platforms</li>
+          <li>20 posts / month</li>
+          <li>6 reels / short videos</li>
+          <li>Stories &amp; engagement content</li>
+          <li>Community management</li>
+          <li>Monthly strategy call &amp; report</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="plan reveal">
+        <h3>Premium</h3>
+        <p class="for">For brands that want full-service growth</p>
+        <div class="price">$1,799<small>/month</small></div>
+        <p class="from">starting price</p>
+        <ul>
+          <li>Up to 4 platforms</li>
+          <li>30 posts / month</li>
+          <li>12 reels / short videos</li>
+          <li>Full community management</li>
+          <li>Meta / TikTok ads management</li>
+          <li>Bi-weekly calls &amp; detailed reports</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost">Get Started</a>
+      </div>
+    </div>
+    <p class="note">Ad spend is billed separately by the platform. Need something different? <a href="#contact" class="grad-text" style="font-weight:600">Ask for a custom plan.</a></p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap why-grid">
+    <div>
+      <div class="section-head reveal" style="margin-bottom:34px">
+        <span class="eyebrow">Why Presence Uplift</span>
+        <h2>A small, focused team that <span class="grad-text">treats your brand like ours.</span></h2>
+      </div>
+      <div class="why-list">
+        <div class="why-item reveal"><div class="icon">⚡</div><div><h3>Fast turnaround</h3><p>Our time zone means your work progresses while you sleep. Wake up to drafts ready for review.</p></div></div>
+        <div class="why-item reveal"><div class="icon">🎯</div><div><h3>Strategy first</h3><p>Every post has a purpose: reach, trust, or conversion. No random content.</p></div></div>
+        <div class="why-item reveal"><div class="icon">🧑‍💼</div><div><h3>Direct founder access</h3><p>You work directly with the founders, not a chain of account managers.</p></div></div>
+        <div class="why-item reveal"><div class="icon">📊</div><div><h3>Transparent results</h3><p>Clear monthly reports, month-to-month plans, and full ownership of your content.</p></div></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="founders">
+        <div class="founder"><div class="avatar"><div>AM</div></div><h3>Abdul Moeed</h3><span>Co-founder · Strategy &amp; Growth</span></div>
+        <div class="founder"><div class="avatar"><div>RA</div></div><h3>Rana Ahmad</h3><span>Co-founder · Creative &amp; Content</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions, <span class="grad-text">answered.</span></h2>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>Do I need to sign a long-term contract?</summary><p>No. All plans are month-to-month. We earn your business every month with results.</p></details>
+      <details class="reveal"><summary>How do you work with clients in other countries?</summary><p>Everything runs online: video calls, a shared content calendar for approvals, and WhatsApp or email for quick questions. We schedule calls at times that suit your time zone.</p></details>
+      <details class="reveal"><summary>Will I approve content before it's posted?</summary><p>Always. You get the full monthly calendar to review, and nothing goes live without your approval.</p></details>
+      <details class="reveal"><summary>When will I see results?</summary><p>Most clients notice a more professional, active page within the first two weeks. Growth in reach and enquiries builds month over month as the strategy compounds.</p></details>
+      <details class="reveal"><summary>How do payments work?</summary><p>Plans are billed monthly in advance in USD. We accept international payments through Payoneer, Wise and bank transfer.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <span class="eyebrow">Free, no obligation</span>
+      <h2>Get your free <span class="grad-text">social media audit.</span></h2>
+      <p>Send us your Instagram or TikTok handle. Within 48 hours we'll reply with a personalised review of what to fix and how to grow.</p>
+      <div class="contact-row">
+        <a class="btn btn-primary" href="mailto:presenceuplift@gmail.com?subject=Free%20Social%20Media%20Audit&body=Hi%20Presence%20Uplift%2C%0A%0AMy%20business%3A%20%0AMy%20Instagram%2FTikTok%20handle%3A%20%0AWhat%20I%20want%20to%20achieve%3A%20%0A">✉️ Email us for an audit</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/presenceuplift/" target="_blank" rel="noopener">📸 DM us on Instagram</a>
+      </div>
+      <p style="margin:26px auto 0;font-size:15px">presenceuplift@gmail.com</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <a href="#top" class="logo" style="font-size:18px">Presence<span class="grad-text">Uplift</span></a>
+    <div class="foot-links">
+      <a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
+      <a href="https://www.instagram.com/presenceuplift/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <span>© <span id="yr">2026</span> Presence Uplift. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>10));
+  const links=document.getElementById('links');
+  document.getElementById('burger').onclick=()=>links.classList.toggle('open');
+  links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
