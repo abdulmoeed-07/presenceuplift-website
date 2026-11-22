@@ -6,19 +6,38 @@
 <title>Presence Uplift | Social Media Growth Agency</title>
 <meta name="description" content="Presence Uplift is a social media agency helping businesses in the US, UK, Canada, Australia and UAE grow on Instagram, TikTok, Facebook and LinkedIn with content that brings real clients.">
 <meta property="og:title" content="Presence Uplift | Social Media Growth Agency">
-<meta property="og:description" content="Content, strategy and growth for Instagram, TikTok, Facebook & LinkedIn. Book a free audit.">
+<meta property="og:description" content="Content, strategy and growth for Instagram, TikTok, Facebook & LinkedIn. Book a free strategy call.">
 <meta property="og:url" content="https://presenceuplift.com">
 <meta property="og:type" content="website">
+<!-- PH-23: add a 1200x630 share image at /og-image.png, then uncomment the two lines below -->
+<!-- <meta property="og:image" content="https://presenceuplift.com/og-image.png"> -->
+<!-- <meta name="twitter:card" content="summary_large_image"> -->
 <link rel="canonical" href="https://presenceuplift.com/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111827'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3EPU%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- PH-24: Google Analytics 4. Replace G-XXXXXXXXXX with the real ID, then uncomment. -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+-->
+<!-- PH-24: Meta Pixel. Replace PIXEL_ID with the real ID, then uncomment. -->
+<!--
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','PIXEL_ID');fbq('track','PageView');</script>
+-->
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Presence Uplift","url":"https://presenceuplift.com/","description":"Social media growth agency: strategy, content, short-form video and management for Instagram, TikTok, Facebook and LinkedIn.","areaServed":["US","GB","CA","AU","AE"],"sameAs":["https://www.instagram.com/presenceuplift/"]}
+</script>
+
 <style>
 :root{
   --bg:#ffffff; --bg2:#f7f7f8; --card:#ffffff; --line:#e5e7eb;
   --text:#111827; --muted:#4b5563; --accent:#111827;
   --radius:12px;
+  --ph-line:#c7cbd1; --ph-tag-bg:#fef3c7; --ph-tag-text:#92400e; --ph-tag-line:#fcd34d;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -26,58 +45,76 @@ body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:
 h1,h2,h3,.logo{font-family:Inter,system-ui,sans-serif;line-height:1.25;letter-spacing:-.01em;font-weight:600}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
-.grad-text{color:inherit}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:8px;font-weight:500;font-size:15px;transition:background .2s,border-color .2s}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:8px;font-weight:500;font-size:15px;transition:background .2s,border-color .2s;cursor:pointer;font-family:inherit}
 .btn-primary{background:#111827;color:#fff;border:1px solid #111827}
 .btn-primary:hover{background:#374151}
 .btn-ghost{border:1px solid var(--line);color:var(--text);background:#fff}
 .btn-ghost:hover{border-color:#9ca3af}
 .eyebrow{display:inline-block;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
 section{padding:72px 0}
+.alt{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .section-head{max-width:640px;margin-bottom:40px}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center}
 .section-head h2{font-size:28px;margin-bottom:12px}
 .section-head p{color:var(--muted);font-size:16px}
+.cta-line{margin-top:36px;text-align:center}
+
+/* ---------- placeholders (remove once filled) ---------- */
+.draft-bar{background:var(--ph-tag-bg);color:var(--ph-tag-text);border-bottom:1px solid var(--ph-tag-line);font-size:13px;text-align:center;padding:8px 16px}
+.ph{position:relative;border:2px dashed var(--ph-line);border-radius:var(--radius);background:repeating-linear-gradient(45deg,#fafafa 0 12px,#f3f4f6 12px 24px)}
+.ph-tag{position:absolute;top:-11px;left:14px;z-index:2;background:var(--ph-tag-bg);color:var(--ph-tag-text);border:1px solid var(--ph-tag-line);font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;letter-spacing:.02em;white-space:nowrap;max-width:calc(100% - 28px);overflow:hidden;text-overflow:ellipsis}
+.ph-inner{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;color:#6b7280;font-size:14px;padding:24px}
+.ph-inner b{color:#374151;font-weight:600}
+.play{width:64px;height:64px;border-radius:50%;background:#111827;display:grid;place-items:center}
+.play svg{margin-left:4px}
+.play.sm{width:36px;height:36px}
+.ratio-16x9{aspect-ratio:16/9}
+.ratio-9x16{aspect-ratio:9/16}
+.ratio-1{aspect-ratio:1}
+.tok{background:var(--ph-tag-bg);color:var(--ph-tag-text);padding:0 5px;border-radius:4px;font-weight:600;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.hero-grid>*{min-width:0}
 
 /* nav */
 nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
 .logo{display:flex;align-items:center;gap:8px;font-size:18px}
-.logo-mark{display:none}
 .nav-links{display:flex;gap:28px;font-size:15px;color:var(--muted)}
 .nav-links a:hover{color:var(--text)}
 .nav-cta{padding:8px 16px;font-size:14px}
 .burger{display:none;background:none;border:0;color:var(--text);font-size:24px;cursor:pointer}
 
 /* hero */
-.hero{padding:80px 0 64px}
-.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.hero{padding:72px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .hero h1{font-size:36px;margin-bottom:18px}
 .hero p.lead{font-size:17px;color:var(--muted);max-width:560px;margin-bottom:28px}
-.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
-.platforms{display:flex;gap:8px;flex-wrap:wrap}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.platforms{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
 .chip{padding:5px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--muted);background:#fff}
+.hero-proof{font-size:14px;color:var(--muted)}
+.learn{margin-top:14px;font-size:14px;color:var(--muted)}
+.learn ul{list-style:none;display:grid;gap:4px;margin-top:6px}
+.learn li::before{content:"→ ";color:var(--text)}
 
-/* phone mock */
-.phone{position:relative;margin:0 auto;width:260px;aspect-ratio:9/18.5;border-radius:36px;background:#fff;border:1px solid var(--line);padding:10px}
-.screen{height:100%;border-radius:28px;background:var(--bg2);overflow:hidden;padding:16px 14px}
-.ig-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
-.avatar{width:50px;height:50px;border-radius:50%;border:1px solid var(--line);background:#fff}
-.avatar div{width:100%;height:100%;border-radius:50%;display:grid;place-items:center;font-weight:600;font-size:14px;color:var(--text)}
-.ig-stats{display:flex;gap:12px;font-size:11px;color:var(--muted)}
-.ig-stats b{display:block;color:var(--text);font-size:13px}
-.ig-bio{font-size:11px;color:var(--muted);margin-bottom:12px}
-.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
-.ig-grid span{aspect-ratio:1;border-radius:4px;background:#e5e7eb}
-.ig-grid span:nth-child(even){background:#d1d5db}
-.float{display:none}
+/* stat band */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{padding:22px 18px;text-align:center}
+.stat .num{font-size:28px;font-weight:600;color:var(--text)}
+.stat .lbl{font-size:14px;color:var(--muted)}
 
-/* problems */
-.problems{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.grid3,.grid-services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+/* logos */
+.logos{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:8px}
+.logo-slot{height:64px}
+.logos-head{text-align:center;color:var(--muted);font-size:14px;margin-bottom:22px}
+
+/* cards */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
 .icon{width:44px;height:44px;border-radius:10px;border:1px solid var(--line);background:var(--bg2);display:grid;place-items:center;color:var(--text);margin-bottom:14px}
 .card h3{font-size:17px;margin-bottom:8px}
 .card p{color:var(--muted);font-size:15px}
+.card ul{margin:10px 0 0 18px;color:var(--muted);font-size:15px}
 
 /* process */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
@@ -86,8 +123,36 @@ nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var
 .step h3{font-size:17px;margin-bottom:6px}
 .step p{color:var(--muted);font-size:15px}
 
+/* case studies */
+.cases{display:grid;gap:28px}
+.case{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;padding:28px}
+.case-head{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.case-logo{width:52px;height:52px;border-radius:50%;flex-shrink:0}
+.case-logo .ph-inner{padding:0;font-size:10px}
+.case h3{font-size:19px}
+.case .meta{color:var(--muted);font-size:14px}
+.case .period{font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin:16px 0 10px}
+.case-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.case-stat{border:1px solid var(--line);border-radius:10px;padding:12px;background:#fff}
+.case-stat b{display:block;font-size:20px}
+.case-stat span{font-size:13px;color:var(--muted)}
+.case .story{margin-top:14px;font-size:15px;color:var(--muted)}
+.reels3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.reels3 .ph-inner{padding:8px;font-size:12px}
+
+/* portfolio */
+.reels{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+
+/* testimonials */
+.quote .stars{letter-spacing:2px;margin-bottom:10px}
+.quote p{font-style:italic}
+.who{display:flex;align-items:center;gap:12px;margin-top:16px}
+.who .avatar-ph{width:44px;height:44px;border-radius:50%;flex-shrink:0}
+.who .avatar-ph .ph-inner{padding:0}
+.who b{display:block;font-size:15px}
+.who span{font-size:13px;color:var(--muted)}
+
 /* pricing */
-.pricing{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
 .plan{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;display:flex;flex-direction:column;position:relative}
 .plan.featured{border:2px solid #111827}
@@ -104,20 +169,41 @@ nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var
 .plan .btn{justify-content:center}
 .note{text-align:center;color:var(--muted);margin-top:28px;font-size:15px}
 .note a{text-decoration:underline}
+.guarantee{margin-top:32px}
+.guarantee .ph-inner{flex-direction:row;gap:18px;justify-content:flex-start;text-align:left;padding:24px 28px}
+.shield{width:52px;height:52px;border-radius:12px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;flex-shrink:0;color:var(--text)}
 
-/* why */
-.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+/* roi table */
+.roi{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;font-size:15px}
+.roi th,.roi td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line)}
+.roi th{font-weight:600;background:var(--bg2);font-size:14px}
+.roi td:nth-child(2),.roi td:nth-child(3),.roi th:nth-child(2),.roi th:nth-child(3){text-align:right}
+.roi tr.total td{font-weight:600;border-bottom:0}
+.roi-wrap{padding:6px;overflow-x:auto}
+
+/* about */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
 .why-list{display:grid;gap:14px}
 .why-item{display:flex;gap:14px;padding:18px;border-radius:var(--radius);border:1px solid var(--line);background:#fff}
 .why-item .icon{margin:0;flex-shrink:0}
 .why-item h3{font-size:16px;margin-bottom:2px}
 .why-item p{color:var(--muted);font-size:15px}
 .founders{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.founder{text-align:center;padding:28px 18px;border-radius:var(--radius);border:1px solid var(--line);background:#fff}
-.founder .avatar{width:80px;height:80px;margin:0 auto 14px;background:var(--bg2)}
-.founder .avatar div{font-size:22px}
+.founder{text-align:center;padding:24px 18px;border-radius:var(--radius);border:1px solid var(--line);background:#fff}
+.founder .photo{width:96px;height:96px;margin:0 auto 14px;border-radius:50%}
+.founder .photo .ph-inner{padding:0;font-size:11px}
 .founder h3{font-size:17px}
-.founder span{color:var(--muted);font-size:14px}
+.founder span{color:var(--muted);font-size:14px;display:block}
+.founder p{font-size:14px;color:var(--muted);margin-top:8px}
+.story-ph{margin-top:16px;min-height:150px}
+
+/* lead magnet */
+.magnet{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
+.pdf{max-width:260px;margin:0 auto;aspect-ratio:3/4;width:100%}
+.form-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+input,select,textarea{font-family:inherit;font-size:15px;padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--text);width:100%}
+.form-row input{flex:1;min-width:200px;width:auto}
+.fine{font-size:13px;color:var(--muted);margin-top:10px}
 
 /* faq */
 .faq{max-width:780px}
@@ -127,26 +213,32 @@ summary::-webkit-details-marker{display:none}
 summary::after{content:"+";font-size:20px;color:var(--muted);line-height:1}
 details[open] summary::after{content:"−"}
 details p{padding:0 20px 16px;color:var(--muted);font-size:15px}
+.vfaq{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px}
+.vfaq .ph-inner{padding:12px;font-size:13px}
 
-/* cta */
-.cta-box{border-radius:var(--radius);padding:48px 32px;text-align:center;background:var(--bg2);border:1px solid var(--line)}
-.cta-box h2{font-size:28px;margin-bottom:12px}
-.cta-box p{color:var(--muted);font-size:16px;max-width:560px;margin:0 auto 24px}
-.contact-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+/* booking */
+.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.book-form{padding:28px 24px 24px}
+.book-form label{display:block;font-size:14px;font-weight:500;margin:12px 0 6px}
+.book-form label:first-of-type{margin-top:4px}
+.book-form .btn{width:100%;justify-content:center;margin-top:18px}
+.calendar{min-height:520px}
+.fallback{text-align:center;margin-top:28px;color:var(--muted);font-size:15px}
+.contact-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:14px}
 
 /* footer */
 footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
 .foot-in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.foot-links{display:flex;gap:20px}
+.foot-links{display:flex;gap:20px;flex-wrap:wrap}
 .foot-links a:hover{color:var(--text)}
 
-.reveal{opacity:1}
-
 @media (max-width:960px){
-  .hero-grid,.why-grid{grid-template-columns:1fr}
-  .phone-wrap{display:none}
-  .grid3,.grid-services,.plans{grid-template-columns:1fr}
-  .steps{grid-template-columns:1fr 1fr}
+  .hero-grid,.why-grid,.case,.magnet,.book-grid{grid-template-columns:1fr}
+  .grid3,.plans{grid-template-columns:1fr}
+  .grid2{grid-template-columns:1fr}
+  .steps,.stats{grid-template-columns:1fr 1fr}
+  .logos{grid-template-columns:repeat(3,1fr)}
+  .reels,.vfaq{grid-template-columns:1fr 1fr}
   .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--line)}
   .nav-links.open{display:flex}
   .nav-links a{padding:14px 24px;border-top:1px solid var(--line)}
@@ -157,120 +249,340 @@ footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 }
 @media (max-width:560px){
   .steps,.founders{grid-template-columns:1fr}
-  .cta-box{padding:36px 20px}
-  .hero{padding:56px 0 48px}
-  .section-head h2,.cta-box h2{font-size:24px}
+  .case-stats{grid-template-columns:1fr 1fr}
+  .case{padding:20px}
+  .hero{padding:48px 0 40px}
+  .section-head h2{font-size:24px}
+  .stat .num{font-size:24px}
+  .guarantee .ph-inner{flex-direction:column;text-align:center;align-items:center}
 }
 </style>
 </head>
 <body>
 
+<!-- DRAFT BAR: delete this div once every placeholder is filled -->
+<div class="draft-bar">Draft build: dashed boxes with yellow tags (PH-01, PH-02…) are placeholders to fill. See PLACEHOLDERS.md.</div>
+
 <nav id="nav">
   <div class="wrap nav-in">
-    <a href="#top" class="logo">
-      <span class="logo-mark"><svg width="20" height="20" viewBox="0 0 64 64"><defs><linearGradient id="lg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#ff4d6d"/><stop offset="1" stop-color="#ffb547"/></linearGradient></defs><path d="M14 46 L32 18 L50 46" fill="none" stroke="url(#lg)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      Presence Uplift
-    </a>
+    <a href="#top" class="logo">Presence Uplift</a>
     <div class="nav-links" id="links">
+      <a href="#results">Results</a>
       <a href="#services">Services</a>
-      <a href="#process">How it works</a>
       <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="#contact" class="btn btn-primary nav-cta">Free Audit</a>
+    <a href="#book" class="btn btn-primary nav-cta">Book a Call</a>
     <button class="burger" id="burger" aria-label="Open menu">☰</button>
   </div>
 </nav>
 
+<!-- ===================== HERO ===================== -->
 <header class="hero" id="top">
   <div class="wrap hero-grid">
-    <div class="reveal">
-      <span class="eyebrow">Social Media Growth Agency</span>
-      <h1>Turn your social media into a <span class="grad-text">client magnet.</span></h1>
+    <div>
+      <!-- PH-01: niche / ICP line. Replace the token with who we serve. -->
+      <span class="eyebrow">For <span class="tok">[PH-01: niche, e.g. clinics &amp; local service businesses]</span></span>
+      <!-- PH-02: specific, measurable promise. Current headline is a stand-in. -->
+      <h1>Turn your social media into a client magnet.</h1>
       <p class="lead">We plan, create and manage scroll-stopping content for growing businesses in the US, UK, Canada, Australia and the UAE, so you get more followers, more trust and more clients without lifting a finger.</p>
+      <p class="lead" style="margin-top:-16px"><span class="tok">[PH-02: specific promise + timeframe, e.g. "XX enquiries in 90 days or month 4 is free"]</span></p>
       <div class="hero-ctas">
-        <a href="#contact" class="btn btn-primary">Get a Free Profile Audit →</a>
-        <a href="#pricing" class="btn btn-ghost">See Packages</a>
+        <a href="#book" class="btn btn-primary">Book a Free Strategy Call →</a>
+        <a href="#results" class="btn btn-ghost">See Our Results</a>
       </div>
       <div class="platforms">
         <span class="chip">Instagram</span><span class="chip">TikTok</span><span class="chip">Facebook</span><span class="chip">LinkedIn</span><span class="chip">Meta &amp; TikTok Ads</span>
       </div>
+      <!-- PH-03: one-line proof under the CTA -->
+      <p class="hero-proof">★★★★★ <span class="tok">[PH-03: XX clients served · XXM+ views generated · XX countries]</span></p>
     </div>
-    <div class="phone-wrap reveal">
-      <div class="phone">
-        <div class="float f1"><i>♥</i><div><b>More engagement</b><br><span style="color:var(--muted)">content people save &amp; share</span></div></div>
-        <div class="float f2"><i>↗</i><div><b>More enquiries</b><br><span style="color:var(--muted)">DMs that turn into clients</span></div></div>
-        <div class="screen">
-          <div class="ig-top">
-            <div class="avatar"><div>YB</div></div>
-            <div class="ig-stats"><div><b>248</b>posts</div><div><b>12.4K</b>followers</div><div><b>310</b>following</div></div>
-          </div>
-          <div class="ig-bio"><b style="color:var(--text)">Your Brand</b><br>Consistent. On-brand. Growing.<br>Book a call ↓</div>
-          <div class="ig-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+    <!-- PH-04: AUTHORITY / FOUNDER VIDEO (60–90 sec). Replace this whole .ph block with a YouTube/Vimeo/Loom iframe or <video>. -->
+    <div>
+      <div class="ph ratio-16x9" data-ph="PH-04">
+        <span class="ph-tag">PH-04 · Authority video (60–90 sec)</span>
+        <div class="ph-inner">
+          <div class="play"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>
+          <b>Founder video goes here</b>
+          <span>Who we are · who we help · what happens on the call</span>
         </div>
+      </div>
+      <div class="learn">
+        In this video you'll learn:
+        <ul>
+          <li><span class="tok">[Point 1, e.g. why most business pages get no reach]</span></li>
+          <li><span class="tok">[Point 2, e.g. the system we use to post consistently]</span></li>
+          <li><span class="tok">[Point 3, e.g. how followers turn into enquiries]</span></li>
+        </ul>
       </div>
     </div>
   </div>
 </header>
 
-<section class="problems">
+<!-- ===================== PH-05: CLIENT LOGOS ===================== -->
+<section style="padding:8px 0 56px">
   <div class="wrap">
-    <div class="section-head reveal">
+    <p class="logos-head">Trusted by growing brands across <span class="tok">[countries / industries]</span></p>
+    <div class="logos">
+      <div class="ph logo-slot"><span class="ph-tag">PH-05 · Client logos</span><div class="ph-inner">Logo</div></div>
+      <div class="ph logo-slot"><div class="ph-inner">Logo</div></div>
+      <div class="ph logo-slot"><div class="ph-inner">Logo</div></div>
+      <div class="ph logo-slot"><div class="ph-inner">Logo</div></div>
+      <div class="ph logo-slot"><div class="ph-inner">Logo</div></div>
+      <div class="ph logo-slot"><div class="ph-inner">Logo</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROBLEMS ===================== -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
       <span class="eyebrow">Sound familiar?</span>
-      <h2>Great business. <span class="grad-text">Invisible online.</span></h2>
+      <h2>Great business. Invisible online.</h2>
       <p>Most businesses lose clients to competitors simply because those competitors look better on social media.</p>
     </div>
     <div class="grid3">
-      <div class="card reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3>No time to post</h3><p>You're busy running the business. Posting consistently keeps slipping down the to-do list, and your page looks inactive.</p></div>
-      <div class="card reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 17l-8.5-8.5-5 5L2 7"/><path d="M16 17h6v-6"/></svg></div><h3>Posts get no reach</h3><p>You post sometimes, but views and likes stay flat. Without a strategy, the algorithm doesn't show your content to new people.</p></div>
-      <div class="card reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Followers don't become clients</h3><p>Even when people find you, nothing guides them to book, buy or message. Your page isn't built to convert.</p></div>
+      <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3>No time to post</h3><p>You're busy running the business. Posting consistently keeps slipping down the to-do list, and your page looks inactive.</p></div>
+      <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 17l-8.5-8.5-5 5L2 7"/><path d="M16 17h6v-6"/></svg></div><h3>Posts get no reach</h3><p>You post sometimes, but views and likes stay flat. Without a strategy, the algorithm doesn't show your content to new people.</p></div>
+      <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Followers don't become clients</h3><p>Even when people find you, nothing guides them to book, buy or message. Your page isn't built to convert.</p></div>
     </div>
   </div>
 </section>
 
-<section id="services">
+<!-- ===================== PH-06: WHO WE WORK WITH ===================== -->
+<section id="fit">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head">
+      <span class="eyebrow">Who we work with</span>
+      <h2>Built for businesses at <span class="tok">[PH-06: stage / revenue range]</span></h2>
+      <p>Draft fit profiles. Rewrite once the niche (PH-01) is decided.</p>
+    </div>
+    <div class="grid3">
+      <div class="card"><h3>Not posting yet</h3><p>You've grown through referrals or ads and know you need an organic presence, but don't have the time or team to build one.</p></div>
+      <div class="card"><h3>Posting, but stuck</h3><p>You post regularly but views, followers and enquiries have flatlined. You need strategy, hooks and better content, not more of the same.</p></div>
+      <div class="card"><h3>Growing, need to scale</h3><p>Content is working and you want more volume, short-form video and ads on top, without hiring an in-house team.</p></div>
+    </div>
+    <p class="note" style="margin-top:20px">Minimum fit: <span class="tok">[PH-06: e.g. $XXk+/month revenue, established offer]</span></p>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section id="services" class="alt">
+  <div class="wrap">
+    <div class="section-head">
       <span class="eyebrow">What we do</span>
-      <h2>Everything your social media needs, <span class="grad-text">done for you.</span></h2>
+      <h2>Everything your social media needs, done for you.</h2>
       <p>One team handling strategy, content, posting and growth, so you can focus on your business.</p>
     </div>
-    <div class="grid-services">
-      <div class="card svc reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36z"/></svg></div><h3>Strategy &amp; Profile Setup</h3><p>Audience research, competitor analysis, content pillars, and a profile makeover (bio, highlights, links) built to convert visitors.</p></div>
-      <div class="card svc reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></svg></div><h3>Content Creation</h3><p>On-brand posts, carousels and stories designed to stop the scroll, with captions and hashtags written for your audience.</p></div>
-      <div class="card svc reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 13l5.22 3.48a.5.5 0 0 0 .78-.42V7.94a.5.5 0 0 0-.75-.43L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg></div><h3>Reels &amp; Short Video</h3><p>Scripted and edited reels and TikToks, the format that gets you in front of new people fastest.</p></div>
-      <div class="card svc reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><h3>Scheduling &amp; Management</h3><p>A monthly content calendar you approve in advance. We post at the best times on every platform.</p></div>
-      <div class="card svc reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Community Management</h3><p>We reply to comments and engage with your audience so your page feels alive and trusted.</p></div>
-      <div class="card svc reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg></div><h3>Paid Ads &amp; Reporting</h3><p>Meta and TikTok ad campaigns to scale results, plus a clear monthly report showing what's working.</p></div>
+    <div class="grid3">
+      <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36z"/></svg></div><h3>Strategy &amp; Profile Setup</h3><p>Audience research, competitor analysis, content pillars, and a profile makeover (bio, highlights, links) built to convert visitors.</p></div>
+      <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></svg></div><h3>Content Creation</h3><p>On-brand posts, carousels and stories designed to stop the scroll, with captions and hashtags written for your audience.</p></div>
+      <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 13l5.22 3.48a.5.5 0 0 0 .78-.42V7.94a.5.5 0 0 0-.75-.43L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg></div><h3>Reels &amp; Short Video</h3><p>Scripted and edited reels and TikToks, the format that gets you in front of new people fastest.</p></div>
+      <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><h3>Scheduling &amp; Management</h3><p>A monthly content calendar you approve in advance. We post at the best times on every platform.</p></div>
+      <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Community Management</h3><p>We reply to comments and engage with your audience so your page feels alive and trusted.</p></div>
+      <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg></div><h3>Paid Ads &amp; Reporting</h3><p>Meta and TikTok ad campaigns to scale results, plus a clear monthly report showing what's working.</p></div>
     </div>
   </div>
 </section>
 
-<section id="process" style="padding-top:0">
+<!-- ===================== PH-07: NAMED METHOD ===================== -->
+<section id="process">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head">
       <span class="eyebrow">How it works</span>
-      <h2>From first call to <span class="grad-text">growing page</span> in 4 steps.</h2>
+      <h2>The <span class="tok">[PH-07: method name]</span>™: from first call to growing page in 4 steps.</h2>
     </div>
     <div class="steps">
-      <div class="step reveal"><h3>Free audit call</h3><p>We review your current profiles and show you exactly what's holding them back.</p></div>
-      <div class="step reveal"><h3>Custom strategy</h3><p>We build a plan around your goals, audience, and brand voice.</p></div>
-      <div class="step reveal"><h3>Create &amp; publish</h3><p>You approve the monthly calendar, and we design, write, and post everything.</p></div>
-      <div class="step reveal"><h3>Report &amp; grow</h3><p>Monthly reports with clear numbers. We double down on what works.</p></div>
+      <div class="step"><h3>Free strategy call</h3><p>We review your current profiles and show you exactly what's holding them back.</p></div>
+      <div class="step"><h3>Custom strategy</h3><p>We build a plan around your goals, audience, and brand voice.</p></div>
+      <div class="step"><h3>Create &amp; publish</h3><p>You approve the monthly calendar, and we design, write, and post everything.</p></div>
+      <div class="step"><h3>Report &amp; grow</h3><p>Monthly reports with clear numbers. We double down on what works.</p></div>
     </div>
   </div>
 </section>
 
-<section class="pricing" id="pricing">
+<!-- ===================== PH-08: RESULTS STATS BAND ===================== -->
+<section id="results" class="alt" style="padding:56px 0">
   <div class="wrap">
-    <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center">
+    <div class="section-head center" style="margin-bottom:28px">
+      <span class="eyebrow">Results so far</span>
+      <h2>The numbers behind our work.</h2>
+    </div>
+    <div class="stats">
+      <div class="ph stat"><span class="ph-tag">PH-08 · Headline stats</span><div class="num">[XX]M+</div><div class="lbl">views generated</div></div>
+      <div class="ph stat"><div class="num">[XX]K+</div><div class="lbl">followers gained for clients</div></div>
+      <div class="ph stat"><div class="num">[XX]</div><div class="lbl">brands managed</div></div>
+      <div class="ph stat"><div class="num">[XX]+</div><div class="lbl">posts published / month</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PH-09 to PH-11: CASE STUDIES ===================== -->
+<section id="cases">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Case studies</span>
+      <h2>Real clients. Real numbers.</h2>
+      <p>Each case study: starting point → what we did → result, with a timeframe.</p>
+    </div>
+    <div class="cases">
+
+      <!-- CASE STUDY TEMPLATE: copy this .case block for each new client -->
+      <div class="card case ph" data-ph="PH-09">
+        <span class="ph-tag">PH-09 · Case study 1</span>
+        <div>
+          <div class="case-head">
+            <div class="ph case-logo"><div class="ph-inner">Logo</div></div>
+            <div><h3>[Client name]</h3><div class="meta">[Industry] · [Country]</div></div>
+          </div>
+          <div class="period">Results in [X] months</div>
+          <div class="case-stats">
+            <div class="case-stat"><b>[XX]M</b><span>Total views</span></div>
+            <div class="case-stat"><b>[XX]K</b><span>Followers gained</span></div>
+            <div class="case-stat"><b>[XX]</b><span>Enquiries / leads</span></div>
+            <div class="case-stat"><b>[XX]</b><span>Posts published</span></div>
+            <div class="case-stat"><b>[X.X]%</b><span>Engagement rate</span></div>
+            <div class="case-stat"><b>[IG, TT]</b><span>Platforms</span></div>
+          </div>
+          <p class="story"><b>Before:</b> [starting point]. <b>What we did:</b> [1–2 lines]. <b>After:</b> [result].</p>
+        </div>
+        <div>
+          <div class="reels3">
+            <div class="ph ratio-9x16"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel<br>[XXK views]</div></div>
+            <div class="ph ratio-9x16"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel<br>[XXK views]</div></div>
+            <div class="ph ratio-9x16"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel<br>[XXK views]</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card case ph" data-ph="PH-10">
+        <span class="ph-tag">PH-10 · Case study 2</span>
+        <div>
+          <div class="case-head">
+            <div class="ph case-logo"><div class="ph-inner">Logo</div></div>
+            <div><h3>[Client name]</h3><div class="meta">[Industry] · [Country]</div></div>
+          </div>
+          <div class="period">Results in [X] months</div>
+          <div class="case-stats">
+            <div class="case-stat"><b>[XX]M</b><span>Total views</span></div>
+            <div class="case-stat"><b>[XX]K</b><span>Followers gained</span></div>
+            <div class="case-stat"><b>[XX]</b><span>Enquiries / leads</span></div>
+            <div class="case-stat"><b>[XX]</b><span>Posts published</span></div>
+            <div class="case-stat"><b>[X.X]%</b><span>Engagement rate</span></div>
+            <div class="case-stat"><b>[IG, TT]</b><span>Platforms</span></div>
+          </div>
+          <p class="story"><b>Before:</b> [starting point]. <b>What we did:</b> [1–2 lines]. <b>After:</b> [result].</p>
+        </div>
+        <div>
+          <div class="reels3">
+            <div class="ph ratio-9x16"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel<br>[XXK views]</div></div>
+            <div class="ph ratio-9x16"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel<br>[XXK views]</div></div>
+            <div class="ph ratio-9x16"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel<br>[XXK views]</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card case ph" data-ph="PH-11">
+        <span class="ph-tag">PH-11 · Case study 3</span>
+        <div>
+          <div class="case-head">
+            <div class="ph case-logo"><div class="ph-inner">Logo</div></div>
+            <div><h3>[Client name]</h3><div class="meta">[Industry] · [Country]</div></div>
+          </div>
+          <div class="period">Results in [X] months</div>
+          <div class="case-stats">
+            <div class="case-stat"><b>[XX]M</b><span>Total views</span></div>
+            <div class="case-stat"><b>[XX]K</b><span>Followers gained</span></div>
+            <div class="case-stat"><b>[XX]</b><span>Enquiries / leads</span></div>
+            <div class="case-stat"><b>[XX]</b><span>Posts published</span></div>
+            <div class="case-stat"><b>[X.X]%</b><span>Engagement rate</span></div>
+            <div class="case-stat"><b>[IG, TT]</b><span>Platforms</span></div>
+          </div>
+          <p class="story"><b>Before:</b> [starting point]. <b>What we did:</b> [1–2 lines]. <b>After:</b> [result].</p>
+        </div>
+        <div>
+          <div class="reels3">
+            <div class="ph ratio-9x16"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel<br>[XXK views]</div></div>
+            <div class="ph ratio-9x16"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel<br>[XXK views]</div></div>
+            <div class="ph ratio-9x16"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel<br>[XXK views]</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="cta-line"><a href="#book" class="btn btn-primary">Want results like these? Book a call →</a></div>
+  </div>
+</section>
+
+<!-- ===================== PH-12: PORTFOLIO (content we've created) ===================== -->
+<section id="work" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our work</span>
+      <h2>Content we've created.</h2>
+      <p>Reels, carousels and posts from client accounts. Swap each slot for an embed, video or image.</p>
+    </div>
+    <div class="reels">
+      <div class="ph ratio-9x16"><span class="ph-tag">PH-12 · Portfolio (8 pieces)</span><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel 1</div></div>
+      <div class="ph ratio-9x16"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel 2</div></div>
+      <div class="ph ratio-9x16"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel 3</div></div>
+      <div class="ph ratio-9x16"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>Reel 4</div></div>
+      <div class="ph ratio-1"><div class="ph-inner">Carousel 1</div></div>
+      <div class="ph ratio-1"><div class="ph-inner">Carousel 2</div></div>
+      <div class="ph ratio-1"><div class="ph-inner">Post 1</div></div>
+      <div class="ph ratio-1"><div class="ph-inner">Post 2</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PH-13 / PH-14: TESTIMONIALS ===================== -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What clients say</span>
+      <h2>Don't take our word for it.</h2>
+    </div>
+    <div class="ph ratio-16x9" style="max-width:760px;margin:0 auto 32px" data-ph="PH-13">
+      <span class="ph-tag">PH-13 · Video testimonial</span>
+      <div class="ph-inner">
+        <div class="play"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>
+        <b>Client video testimonial</b>
+        <span>30–60 sec · name, business, result in their own words</span>
+      </div>
+    </div>
+    <div class="grid3">
+      <div class="card quote ph" data-ph="PH-14"><span class="ph-tag">PH-14 · Written testimonials</span>
+        <div class="stars">★★★★★</div>
+        <p>"[Quote with a specific result, e.g. 'We went from X to Y enquiries a month in 90 days.']"</p>
+        <div class="who"><div class="ph avatar-ph"><div class="ph-inner">📷</div></div><div><b>[Name]</b><span>[Role, Business]</span></div></div>
+      </div>
+      <div class="card quote ph">
+        <div class="stars">★★★★★</div>
+        <p>"[Quote with a specific result]"</p>
+        <div class="who"><div class="ph avatar-ph"><div class="ph-inner">📷</div></div><div><b>[Name]</b><span>[Role, Business]</span></div></div>
+      </div>
+      <div class="card quote ph">
+        <div class="stars">★★★★★</div>
+        <p>"[Quote with a specific result]"</p>
+        <div class="who"><div class="ph avatar-ph"><div class="ph-inner">📷</div></div><div><b>[Name]</b><span>[Role, Business]</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICING + PH-15 GUARANTEE ===================== -->
+<section class="alt" id="pricing">
+  <div class="wrap">
+    <div class="section-head center">
       <span class="eyebrow">Packages</span>
-      <h2>Simple monthly plans. <span class="grad-text">No long contracts.</span></h2>
+      <h2>Simple monthly plans. No long contracts.</h2>
       <p>Pick a starting point. Every plan can be tailored to your business.</p>
     </div>
     <div class="plans">
-      <div class="plan reveal">
+      <div class="plan">
         <h3>Starter</h3>
         <p class="for">For businesses that need a consistent presence</p>
         <div class="price">$499<small>/month</small></div>
@@ -283,9 +595,9 @@ footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-s
           <li>Scheduling &amp; posting</li>
           <li>Monthly performance report</li>
         </ul>
-        <a href="#contact" class="btn btn-ghost">Get Started</a>
+        <a href="#book" class="btn btn-ghost">Get Started</a>
       </div>
-      <div class="plan featured reveal">
+      <div class="plan featured">
         <span class="badge">Most popular</span>
         <h3>Growth</h3>
         <p class="for">For businesses ready to grow fast</p>
@@ -299,9 +611,9 @@ footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-s
           <li>Community management</li>
           <li>Monthly strategy call &amp; report</li>
         </ul>
-        <a href="#contact" class="btn btn-primary">Get Started</a>
+        <a href="#book" class="btn btn-primary">Get Started</a>
       </div>
-      <div class="plan reveal">
+      <div class="plan">
         <h3>Premium</h3>
         <p class="for">For brands that want full-service growth</p>
         <div class="price">$1,799<small>/month</small></div>
@@ -314,63 +626,172 @@ footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-s
           <li>Meta / TikTok ads management</li>
           <li>Bi-weekly calls &amp; detailed reports</li>
         </ul>
-        <a href="#contact" class="btn btn-ghost">Get Started</a>
+        <a href="#book" class="btn btn-ghost">Get Started</a>
       </div>
     </div>
-    <p class="note">Ad spend is billed separately by the platform. Need something different? <a href="#contact" class="grad-text" style="font-weight:600">Ask for a custom plan.</a></p>
+    <div class="ph guarantee" data-ph="PH-15">
+      <span class="ph-tag">PH-15 · Guarantee</span>
+      <div class="ph-inner">
+        <div class="shield"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div><b>Our guarantee: [name it]</b><br>[Define a guarantee we can actually honour, e.g. "If you don't see X by day 90, we work month 4 free."]</div>
+      </div>
+    </div>
+    <p class="note">Ad spend is billed separately by the platform. Need something different? <a href="#book" style="font-weight:600">Ask for a custom plan.</a></p>
   </div>
 </section>
 
-<section id="about">
+<!-- ===================== PH-16: COST COMPARISON / ROI ===================== -->
+<section id="roi">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The math</span>
+      <h2>A full content team for less than one hire.</h2>
+      <p>Compare what it costs to build this in-house. Fill in figures for the target market.</p>
+    </div>
+    <div class="ph roi-wrap" data-ph="PH-16">
+      <span class="ph-tag">PH-16 · Cost comparison figures</span>
+      <table class="roi">
+        <thead><tr><th>Role / cost</th><th>In-house (per month)</th><th>Presence Uplift</th></tr></thead>
+        <tbody>
+          <tr><td>Social media manager</td><td>[$X,XXX]</td><td>Included</td></tr>
+          <tr><td>Video editor</td><td>[$X,XXX]</td><td>Included</td></tr>
+          <tr><td>Graphic designer</td><td>[$X,XXX]</td><td>Included</td></tr>
+          <tr><td>Strategist / copywriter</td><td>[$X,XXX]</td><td>Included</td></tr>
+          <tr><td>Tools &amp; software</td><td>[$XXX]</td><td>Included</td></tr>
+          <tr class="total"><td>Total</td><td>[$XX,XXX]</td><td>From $499</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT / FOUNDERS (PH-17, PH-18) ===================== -->
+<section id="about" class="alt">
   <div class="wrap why-grid">
     <div>
-      <div class="section-head reveal" style="margin-bottom:34px">
+      <div class="section-head" style="margin-bottom:34px">
         <span class="eyebrow">Why Presence Uplift</span>
-        <h2>A small, focused team that <span class="grad-text">treats your brand like ours.</span></h2>
+        <h2>A small, focused team that treats your brand like ours.</h2>
       </div>
       <div class="why-list">
-        <div class="why-item reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><div><h3>Fast turnaround</h3><p>Our time zone means your work progresses while you sleep. Wake up to drafts ready for review.</p></div></div>
-        <div class="why-item reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><div><h3>Strategy first</h3><p>Every post has a purpose: reach, trust, or conversion. No random content.</p></div></div>
-        <div class="why-item reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><h3>Direct founder access</h3><p>You work directly with the founders, not a chain of account managers.</p></div></div>
-        <div class="why-item reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 17v-3M12 17v-6M16 17v-4"/></svg></div><div><h3>Transparent results</h3><p>Clear monthly reports, month-to-month plans, and full ownership of your content.</p></div></div>
+        <div class="why-item"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><div><h3>Fast turnaround</h3><p>Our time zone means your work progresses while you sleep. Wake up to drafts ready for review.</p></div></div>
+        <div class="why-item"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><div><h3>Strategy first</h3><p>Every post has a purpose: reach, trust, or conversion. No random content.</p></div></div>
+        <div class="why-item"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><h3>Direct founder access</h3><p>You work directly with the founders, not a chain of account managers.</p></div></div>
+        <div class="why-item"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 17v-3M12 17v-6M16 17v-4"/></svg></div><div><h3>Transparent results</h3><p>Clear monthly reports, month-to-month plans, and full ownership of your content.</p></div></div>
       </div>
     </div>
-    <div class="reveal">
+    <div>
       <div class="founders">
-        <div class="founder"><div class="avatar"><div>AM</div></div><h3>Abdul Moeed</h3><span>Co-founder · Strategy &amp; Growth</span></div>
-        <div class="founder"><div class="avatar"><div>RA</div></div><h3>Rana Ahmad</h3><span>Co-founder · Creative &amp; Content</span></div>
+        <div class="founder">
+          <div class="ph photo"><span class="ph-tag" style="left:50%;transform:translateX(-50%)">PH-17</span><div class="ph-inner">Photo</div></div>
+          <h3>Abdul Moeed</h3><span>Co-founder · Strategy &amp; Growth</span>
+          <p><span class="tok">[1-line credibility bio]</span></p>
+        </div>
+        <div class="founder">
+          <div class="ph photo"><div class="ph-inner">Photo</div></div>
+          <h3>Rana Ahmad</h3><span>Co-founder · Creative &amp; Content</span>
+          <p><span class="tok">[1-line credibility bio]</span></p>
+        </div>
+      </div>
+      <div class="ph story-ph" data-ph="PH-18">
+        <span class="ph-tag">PH-18 · Founder story / mission</span>
+        <div class="ph-inner"><b>Why we started Presence Uplift</b><span>3–4 sentences: background, what we saw businesses getting wrong, what we do differently.</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="faq" style="padding-top:0">
+<!-- ===================== PH-19: LEAD MAGNET ===================== -->
+<section id="free-guide">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="card magnet" style="padding:36px">
+      <div class="ph pdf" data-ph="PH-19">
+        <span class="ph-tag">PH-19 · Lead magnet</span>
+        <div class="ph-inner"><b>Guide cover</b><span>PDF / checklist mockup</span></div>
+      </div>
+      <div>
+        <span class="eyebrow">Free resource</span>
+        <h2 style="font-size:26px;margin-bottom:10px"><span class="tok">[Lead magnet title, e.g. "The 10-Point Profile Audit Checklist"]</span></h2>
+        <p style="color:var(--muted)">[One line on what they get and why it's useful.]</p>
+        <!-- Needs an email tool (e.g. MailerLite, ConvertKit, Tally) before it captures anything. -->
+        <form class="form-row" onsubmit="alert('Placeholder: connect this form to an email tool (PH-19).');return false;">
+          <input type="email" placeholder="Your email" required aria-label="Email">
+          <button class="btn btn-primary" type="submit">Send me the guide</button>
+        </form>
+        <p class="fine">Not connected yet. No data is collected.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ (PH-20 video FAQs, PH-21 new answers) ===================== -->
+<section id="faq" class="alt">
+  <div class="wrap">
+    <div class="section-head">
       <span class="eyebrow">FAQ</span>
-      <h2>Questions, <span class="grad-text">answered.</span></h2>
+      <h2>Questions, answered.</h2>
+    </div>
+    <div class="vfaq">
+      <div class="ph ratio-16x9"><span class="ph-tag">PH-20 · Video FAQs</span><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>"How much time will this take from me?"</div></div>
+      <div class="ph ratio-16x9"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>"How do you measure results?"</div></div>
+      <div class="ph ratio-16x9"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>"What if it doesn't work?"</div></div>
+      <div class="ph ratio-16x9"><div class="ph-inner"><div class="play sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>"Why a team based in Pakistan?"</div></div>
     </div>
     <div class="faq">
-      <details class="reveal"><summary>Do I need to sign a long-term contract?</summary><p>No. All plans are month-to-month. We earn your business every month with results.</p></details>
-      <details class="reveal"><summary>How do you work with clients in other countries?</summary><p>Everything runs online: video calls, a shared content calendar for approvals, and WhatsApp or email for quick questions. We schedule calls at times that suit your time zone.</p></details>
-      <details class="reveal"><summary>Will I approve content before it's posted?</summary><p>Always. You get the full monthly calendar to review, and nothing goes live without your approval.</p></details>
-      <details class="reveal"><summary>When will I see results?</summary><p>Most clients notice a more professional, active page within the first two weeks. Growth in reach and enquiries builds month over month as the strategy compounds.</p></details>
-      <details class="reveal"><summary>How do payments work?</summary><p>Plans are billed monthly in advance in USD. We accept international payments through Payoneer, Wise and bank transfer.</p></details>
+      <details><summary>Do I need to sign a long-term contract?</summary><p>No. All plans are month-to-month. We earn your business every month with results.</p></details>
+      <details><summary>How do you work with clients in other countries?</summary><p>Everything runs online: video calls, a shared content calendar for approvals, and WhatsApp or email for quick questions. We schedule calls at times that suit your time zone.</p></details>
+      <details><summary>Will I approve content before it's posted?</summary><p>Always. You get the full monthly calendar to review, and nothing goes live without your approval.</p></details>
+      <details><summary>When will I see results?</summary><p>Most clients notice a more professional, active page within the first two weeks. Growth in reach and enquiries builds month over month as the strategy compounds.</p></details>
+      <details><summary>How do payments work?</summary><p>Plans are billed monthly in advance in USD. We accept international payments through Payoneer, Wise and bank transfer.</p></details>
+      <!-- PH-21: new questions. Answers below are placeholders. -->
+      <details><summary>How much of my time does this take?</summary><p><span class="tok">[PH-21: e.g. a 30-min onboarding call, then ~X minutes a month for approvals / filming.]</span></p></details>
+      <details><summary>Who owns the content and accounts?</summary><p><span class="tok">[PH-21: confirm, e.g. you own all accounts and every piece of content, always.]</span></p></details>
+      <details><summary>What do I need to provide?</summary><p><span class="tok">[PH-21: e.g. brand assets, account access, raw footage/photos if any.]</span></p></details>
+      <details><summary>What happens if it doesn't work?</summary><p><span class="tok">[PH-21: tie to the guarantee in PH-15.]</span></p></details>
+      <details><summary>How does this compare to hiring in-house?</summary><p><span class="tok">[PH-21: summarise the PH-16 cost comparison.]</span></p></details>
     </div>
   </div>
 </section>
 
-<section id="contact" style="padding-top:0">
+<!-- ===================== PH-22: BOOKING (form + calendar) ===================== -->
+<section id="book">
   <div class="wrap">
-    <div class="cta-box reveal">
+    <div class="section-head center">
       <span class="eyebrow">Free, no obligation</span>
-      <h2>Get your free <span class="grad-text">social media audit.</span></h2>
-      <p>Send us your Instagram or TikTok handle. Within 48 hours we'll reply with a personalised review of what to fix and how to grow.</p>
+      <h2>Book your free strategy call.</h2>
+      <p>Tell us a bit about your business, then pick a time. On the call we'll review your profiles and show you what to fix.</p>
+    </div>
+    <div class="book-grid">
+      <!-- Qualification form: needs a backend (Tally, Formspree, GoHighLevel, HubSpot) -->
+      <form class="card book-form ph" data-ph="PH-22" onsubmit="alert('Placeholder: connect this form to a form tool (PH-22).');return false;">
+        <span class="ph-tag">PH-22a · Qualification form</span>
+        <label for="f-name">Name</label><input id="f-name" type="text" required>
+        <label for="f-email">Email</label><input id="f-email" type="email" required>
+        <label for="f-biz">Business name &amp; website</label><input id="f-biz" type="text">
+        <label for="f-handle">Instagram / TikTok handle</label><input id="f-handle" type="text" placeholder="@">
+        <label for="f-rev">Monthly revenue</label>
+        <select id="f-rev"><option>Select a range</option><option>[Under $10k]</option><option>[$10k–$50k]</option><option>[$50k–$100k]</option><option>[$100k+]</option></select>
+        <label for="f-goal">What do you want social media to do for you?</label><textarea id="f-goal" rows="3"></textarea>
+        <button class="btn btn-primary" type="submit">Continue to booking →</button>
+        <p class="fine">Not connected yet. No data is collected.</p>
+      </form>
+      <!-- Replace this block with the Calendly / Cal.com inline embed code -->
+      <div class="ph calendar">
+        <span class="ph-tag">PH-22b · Booking calendar embed</span>
+        <div class="ph-inner">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+          <b>Calendly / Cal.com calendar goes here</b>
+          <span>Paste the inline embed code to replace this box</span>
+        </div>
+      </div>
+    </div>
+    <div class="fallback">
+      Prefer to message us?
       <div class="contact-row">
-        <a class="btn btn-primary" href="mailto:presenceuplift@gmail.com?subject=Free%20Social%20Media%20Audit&body=Hi%20Presence%20Uplift%2C%0A%0AMy%20business%3A%20%0AMy%20Instagram%2FTikTok%20handle%3A%20%0AWhat%20I%20want%20to%20achieve%3A%20%0A"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg> Email us for an audit</a>
+        <!-- PH-25: switch to a domain email, e.g. hello@presenceuplift.com -->
+        <a class="btn btn-ghost" href="mailto:presenceuplift@gmail.com?subject=Free%20Strategy%20Call"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg> presenceuplift@gmail.com</a>
         <a class="btn btn-ghost" href="https://www.instagram.com/presenceuplift/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> DM us on Instagram</a>
       </div>
-      <p style="margin:26px auto 0;font-size:15px">presenceuplift@gmail.com</p>
     </div>
   </div>
 </section>
@@ -379,21 +800,18 @@ footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   <div class="wrap foot-in">
     <a href="#top" class="logo" style="font-size:18px">Presence Uplift</a>
     <div class="foot-links">
-      <a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
+      <a href="#results">Results</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#book">Contact</a>
       <a href="https://www.instagram.com/presenceuplift/" target="_blank" rel="noopener">Instagram</a>
+      <a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a>
     </div>
     <span>© <span id="yr">2026</span> Presence Uplift. All rights reserved.</span>
   </div>
 </footer>
 
 <script>
-  const nav=document.getElementById('nav');
-  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>10));
   const links=document.getElementById('links');
   document.getElementById('burger').onclick=()=>links.classList.toggle('open');
   links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   document.getElementById('yr').textContent=new Date().getFullYear();
 </script>
 </body>
